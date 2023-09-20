@@ -1,0 +1,529 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    /* color: #7c7c7d; */
+}
+
+ul,a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.carousel-item::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.carousel-caption{
+    position: relative;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 1.6rem;
+}
+.carousel-caption p{
+    font-size: 1.3rem;
+}
+
+/* ========Home =========== */
+.wrapper{
+    padding: 20px 50px;
+}
+.home-img{
+    background: url(../images/ticer.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+}
+.home-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+.wrapper .title{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+.wrapper p{
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.counter-up{
+    background: url(../images/my-thoughts.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 60vh;
+    padding: 0 50px;
+    position: relative;
+}
+.counter-up::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.counter-up .content{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+}
+.content .box{
+    width: calc(25% - 30px);
+    border: 1px dashed rgba(225, 225, 225, 0.6);
+    border-radius: 5px;
+    color: #fff;
+    flex-direction: column;
+}
+.content .box .icon{
+    font-size: 4.8rem;
+    color: #e6e6e6;
+}
+.content .box .counter{
+    font-size: 5rem;
+    color: #f2f2f2;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+.content .box .text{
+    color: #ccc;
+    font-weight: 400;
+}
+.map-box{
+    width: 100%;
+    height: 60vh;
+}
+/* ========Home =========== */
+/* ========footer======= */
+footer{
+    padding: 25px 0;
+    height: 75vh;
+}
+.single-box p{
+    color: #fff;
+    line-height: 1.9;    
+}
+.single-box h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+
+}
+.single-box .card-area i{
+    font-size: 20px;
+    margin: 10px;
+
+}
+.single-box ul{
+    padding: 0;
+}
+.single-box ul li a{
+    line-height: 2.5;
+    font-weight: 100;
+}
+.single-box h2{
+    color: #d9d3d3;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.single-box a{
+    text-decoration: none;
+    color: #d4dee8;
+}
+#basic-addon2{
+    background-color: #fe1e4f;
+    color: #fff;
+
+}
+.socials{
+    font-size: 18px;
+    margin-right: 15px;
+
+}
+
+
+
+
+/* ========footer======= */
+/* =======Cantact us form========= */
+
+.first_col{
+    background: #d4dee8;
+    height: 550px;
+    position: relative;
+    width: 550px;
+    left: 155px;
+    top: 171px;
+    border-radius: 20px; 
+}
+.img-fluid{
+    border-radius: 20px;
+}
+.last_row{
+    width: 60% important;
+    position: relative;
+    top: 50px;
+    height: 200px;
+    padding-bottom: 100px;
+    background: #c1b788;
+    border-radius: 20px;
+}
+.form-control{
+    height: 52px;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none;
+    border: 1px solid #828fc3;
+}
+.form-control[type=text]:focus{
+    border: 2px solid #828fc3;
+}
+
+.map-side{
+    width: 100%;
+    height: 50vh;
+    
+}
+
+
+/* =======Cantact us form========= */
+/* ==============courses ================ */
+.course-header h2{
+    font-size: 30px;
+    margin: 0 0 15px;
+    font-weight: 600;
+
+}
+.course-header .average-rating{
+    font-weight: 600;
+    color: orange;
+
+}
+.course-header .average-stars i{
+    font-size: 14px;
+    color: orange;
+
+}
+.course-header .rating span{
+    vertical-align: middle;
+
+}
+.course-header ul li{
+    margin: 6px 0 0;
+    text-transform: capitalize;
+}
+.course-header ul li span{
+    margin-left: 5px;
+}
+.courses-tab{
+    margin: 30px 0 2px;
+
+}
+.courses-tab .nav-links{
+    margin: 0 10px 10px 0;
+}
+.course-curriculm .accordion-item{
+    background-color: transparent;
+}
+.course-curriculm .accordion-item span{
+    position: absolute;
+    padding-left: 20px;
+    font-size: 14px;
+    
+}
+.course-curriculm .accordion-item::after{
+    background-image: none;
+    content: '';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: auto;
+    line-height: 1;
+
+}
+.course-curriculm .accordion-button{
+    background: transparent;
+    font-weight: 300;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 180px;
+    line-height: 1.5;
+}
+.course-curriculm .accordion-button:focus{
+    box-shadow: none;
+}
+.course-curriculm .accordion-button:not(.collapsed) span{
+    font-weight: 500;
+}
+.course-curriculm .accordion-button:not(.collapsed)::after{
+    transform: translateY(-50%)rotate(-180deg);
+}
+.course-curriculm .accordion-button:not(.collapsed){
+    font-weight: 600;
+    border-bottom: 1px;
+    transition: none;
+    box-shadow: none;
+}
+.course-description h4{
+    font-size: 16px;
+}
+#course-instructor .img-box img{
+    max-width: 128px;
+    margin-bottom: 15px;
+
+}
+.rating-summary .average-rating{
+    font-size: 5rem;
+    font-weight: 700;
+
+}
+.rating-summary .average-stars i{
+    color: orange;
+}
+.rating-summary .rating-bars-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.rating-summary .progress{
+    height: 8px;
+    width: calc(100% - 120px);
+    margin-right: 20px;
+    border-radius: 0;
+     margin-left: 10px;
+}
+.rating-summary .progress-bar{
+    background-color: #7eb2ee;
+}
+.rating-summary .star-rext{
+    min-width: 60px;
+    color: orange;
+}
+#img-box img{
+    height: 50px;
+    border-radius: 50%;
+}
+.reviews-item{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+.reviews-item .img-box{
+    max-width: 50px;    
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.reviews-item h4{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+}
+.reviews-item .stars-rating i{
+    color: orange;
+    font-size: 12px;
+}
+.reviews-item .stars-rating .date{
+    margin-left: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+.reviews-item p{
+    margin: 5px 0 0;
+}
+.course-sidebar .vid-box{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.course-sidebar .price-new{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(100, 89, 89);
+}
+.course-sidebar .price-discount{
+    color: orange;
+}
+.course-sidebar .features-list{
+    margin: 0 0 20px;
+    
+}
+.btn-block{
+    width: 100%;
+}
+.course-sidebar .features-list li{
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 8px;
+
+}
+.course-sidebar .features-list li::before{
+    content: '';
+    height: 6px;
+    width: 6px;
+    position: absolute;
+    left: 0;
+    top: ppx;
+    border-radius: 50%;
+    background-color: #fe1e4f;
+}
+/* ==============courses ================ */
+/* +++++++++++Our Team++++++++++++ */
+.main-team{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7eb2ee;
+}
+.profile-card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: 0.6s;
+}
+.profile-card:hover{
+    border-radius: 10px;
+    height: 260px;
+}
+.profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    z-index: 99;
+}
+.profile-card:hover .img{
+    transform: translateY(-60px);
+}
+.profile-card:hover img{
+    border-radius: 10px;
+
+}
+.img img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: 0.6s;
+}
+.caption p{
+    font-size: 17px;
+    color: #0c52a1;
+    margin: 2px 0.6px 0;
+}
+.caption h3{
+    font-size: 21px;
+}
+.profile-card:hover .caption{
+    opacity: 1;
+
+}
+.profile-card .social-links a:hover{
+    color: #0c52a1;
+
+}
+
+.caption{
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-80px);
+    transform: 0.6s;
+}
+.caption .social-links a{
+    color: #333;
+    margin: 8px;
+    font-size: 16px;
+    transition: 0.6s;
+
+}
+
+
+
+
+/* ++++++++++Our Team+++++++++++++ */
+/* user */
+.main{
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/progress-speech.JPG);
+    
+}
+.main .next-box{
+    /* margin-top: 5rem; */
+    align-items: center;
+    height: 80vh;
+    border: 1px solid black ;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    
+}
+.next-box .Image-login img{
+    height: 400px;
+    /* width: 400pxpx; */
+    background-size: cover;
+    
+}
+.main .next-box .content-box{
+    background-color: yellow;
+    height: 400px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+}
+h1{
+    width: 130px;
+    background-color: antiquewhite;
+    margin-top: 1rem;
+    margin-left: 230px;
+    border-radius: .5rem;
+    
+}
+#user{
+}
+/* user end */
+/* home */
+.title h1{
+    text-align: justify;
+}
+
+
+
+/* home */
